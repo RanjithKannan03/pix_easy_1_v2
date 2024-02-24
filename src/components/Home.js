@@ -1,4 +1,8 @@
 import React from 'react';
+import Schedule from './Schedule';
+import Footer from './Footer';
+import Main from './Main';
+
 
 
 const Home = (props) => {
@@ -75,7 +79,7 @@ const Home = (props) => {
         </div>
       </div>
       <div className="w-full" style={{ borderTop: '1px solid black'}}></div>
-      <div className="flex w-full h-20 items-center justify-evenly">
+      <div className="flex w-full h-20 items-center justify-between px-80">
         <div className='flex items-center space-x-3'>
         <button className="rounded-full h-8 w-32 border-black border-solid border-2 bg-transparent">The Lineup</button>
         <button className="rounded-full h-8 w-32 bg-transparent border-solid border-2 border-black">About</button>
@@ -87,6 +91,14 @@ const Home = (props) => {
         
       </div>
       <div className="w-full" style={{ borderTop: '1px solid black'}}></div>
+
+
+
+    <Main/>
+
+      <Schedule/>
+      <Footer/>
+
     </div>
   );
 };
