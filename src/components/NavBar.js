@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
+import { IoMdPlay } from "react-icons/io";
+import { GoPlus } from "react-icons/go";
 function NavBar() {
   const [active, setActive] = useState(false);
   useEffect(() => {
@@ -21,7 +23,7 @@ function NavBar() {
       <nav
         className={`
          w-full flex items-center justify-between py-5 px-10 fixed top-0 z-20 ${
-           active ? "bg-gray-800" : "bg-gray-800 overflow-hidden"
+           active ? "bg-[#1A1A1A]" : "bg-transparent overflow-hidden text-white"
          }`}
       >
         <div className="flex">
@@ -55,7 +57,7 @@ function NavBar() {
           )}
           <div
             className={`ml-5 flex space-x-5 ${
-              active ? "text-white" : "text-black"
+              active ? "text-white" : "text-white"
             } `}
           >
             <div>Home</div>
@@ -69,11 +71,33 @@ function NavBar() {
           </div>
         </div>
 
-        <div className="w-96 bg-black h-12 rounded-l-full rounded-r-full p-2">
-            <div className>
-            <img src="https://img.imageboss.me/rinse-fm/cover:smart/600x600/format:webp/120224-Rinse-Playlist-Cover-Website-Spotify.png"  alt="" loading="lazy" className= "object-cover h-10 w-10 rounded-l-full" />
+        <div className="w-96 bg-black flex h-12 rounded-l-full rounded-r-full p-1 items-center">
+            <div className = " flex items-center "> 
+            <img src="https://img.imageboss.me/rinse-fm/cover:smart/600x600/format:webp/120224-Rinse-Playlist-Cover-Website-Spotify.png"  alt="" loading="lazy" className= "object-contain h-11 w-11 rounded-l-full" />
             </div>
-         
+            <div className= "flex flex-col px-2 py-1 ml-3">
+                <div className= "flex text-gray-400">
+                    <div className= "text-[11px]">UK</div>
+                    <div className = "text-[7px] mt-1 pl-1 pb-[1px]">2:30</div>
+                </div>
+                <div className="text-xs font-semibold text-white text-nowrap">
+                        Ben Hauke Presents Club...
+                </div>
+            </div> 
+            <div className= " flex text-[8px] text-white w-14 h-4 rounded-l-full rounded-r-full border border-white bg-transparent items-center justify-center font-semibold">
+                <div className= "h-2 w-2 bg-white rounded-full"></div>
+                <div className="ml-1 flex flex-row text-nowrap text-[10px]"> ON AIR </div>
+            </div>
+
+            <div className= "w-[1px] ml-2 bg-gray-400 h-full">
+                
+            </div>
+            <div className= "w-9 h-9 rounded-full bg-white flex  flex-row items-center justify-center ml-2 px-auto">
+                <IoMdPlay size={24} className= "ml-1 text-black"/>
+            </div>
+            <div>
+            <GoPlus size={23} className="ml-1 text-gray-400"/>
+            </div>
         </div>
       </nav>
     </>

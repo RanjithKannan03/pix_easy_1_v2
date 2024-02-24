@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'profile':"url('../public/assets/profile.jpg')"
+        'profile':"url('../public/assets/profile.jpg')",
+        'random':"url('https://img.imageboss.me/rinse-fm/cover:face/2400x1200/format:webp/Alexander-Nut-June-2023_2.jpg')"
       }
     },
     fontFamily: {
