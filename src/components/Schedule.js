@@ -6,7 +6,7 @@ const Schedule = () => {
   const [selected,setSelected]=useState("Day1");
 
   return (
-    <div className='w-full space-y-40 mt-8 pt-4 px-80 flex-col flex justify-center'>
+    <div className='w-full overflow-hidden space-y-40 mt-8 pt-4 px-80 flex-col flex justify-center'>
 
     <div className='w-full flex border-black rounded-full border-2 border-solid'>
 

@@ -7,7 +7,7 @@ import Main from './Main';
 
 const Home = (props) => {
   return (
-    <div className="w-full flex overflow-auto min-h-screen items-center flex-col bg-gradient-to-b from-white via-transparent to-[#c4ff48]">
+    <div className="w-full flex overflow-hidden min-h-screen items-center flex-col bg-gradient-to-b from-white via-transparent to-[#c4ff48]">
       <div className="flex w-full justify-center">
         <div className="flex flex-col w-52 items-start">
         <div className='flex space-x-4 items-center'>
