@@ -8,8 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'title':"url('../public/assets/title.png')",
-        'h1':"url('../public/assets/h1.png')"
+        'profile':"url('../public/assets/profile.jpg')"
       }
     },
     fontFamily: {
