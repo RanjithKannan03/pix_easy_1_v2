@@ -24,19 +24,19 @@ const Round2 = () => {
     
 
     <div className='flex flex-col overflow-x-scroll cards justify-start items-start space-y-2 text-left px-4 pt-6 pb-2'>
-    <h1 className='text-white text-lg font-semibold relative'>Watch Now</h1>
+    <h1 className='text-white text-xl font-semibold sticky top-0 left-0'>Watch Now</h1>
     <Cards1/>
 
     </div>
 
     <div className='flex flex-col overflow-x-scroll cards justify-start items-start space-y-2 text-left px-4 pt-6 pb-2'>
-    <h1 className='text-white text-lg font-semibold relative'>Live From The Club</h1>
+    <h1 className='text-white text-xl font-semibold sticky top-0 left-0'>Live From The Club</h1>
     <Cards1/>
 
     </div>
 
     <div className='flex flex-col overflow-x-scroll cards justify-start items-start space-y-2 text-left px-4 pt-6 pb-2'>
-    <h1 className='text-white text-lg font-semibold relative'>Latest Album Release</h1>
+    <h1 className='text-white text-xl font-semibold sticky top-0 left-0'>Latest Album Release</h1>
     <Cards1/>
 
     </div>
@@ -44,19 +44,19 @@ const Round2 = () => {
     <RandomSection/>
 
     <div className='flex flex-col overflow-x-scroll cards justify-start items-start space-y-2 text-left px-4 pt-6 pb-2'>
-    <h1 className='text-white text-lg font-semibold relative'>Radio Highlights</h1>
+    <h1 className='text-white text-xl font-semibold sticky top-0 left-0'>Radio Highlights</h1>
     <Cards1/>
 
     </div>
 
     <div className='flex flex-col overflow-x-scroll cards justify-start items-start space-y-2 text-left px-4 pt-6 pb-2'>
-    <h1 className='text-white text-lg font-semibold relative'>Listen Live From The Club</h1>
+    <h1 className='text-white text-xl font-semibold sticky top-0 left-0'>Listen Live From The Club</h1>
     <Cards1/>
 
     </div>
 
     <div className='flex flex-col overflow-x-scroll cards justify-start items-start space-y-2 text-left px-4 pt-6 pb-2'>
-    <h1 className='text-white text-lg font-semibold relative'>From The Vault</h1>
+    <h1 className='text-white text-xl font-semibold sticky top-0 left-0'>From The Vault</h1>
     <Cards1/>
 
     </div>

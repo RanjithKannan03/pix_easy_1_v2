@@ -4,7 +4,10 @@ import { IoMdPlay } from "react-icons/io";
 import { GoPlus } from "react-icons/go";
 function NavBar() {
   const [active, setActive] = useState(false);
+
+
   useEffect(() => {
+
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 50) {
@@ -18,6 +21,8 @@ function NavBar() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+
   return (
     <>
       <nav
