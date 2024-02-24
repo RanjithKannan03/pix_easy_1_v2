@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMdPlay } from "react-icons/io";
 import { GoPlus } from "react-icons/go";
+import {motion} from 'framer-motion';
+
 function NavBar() {
   const [active, setActive] = useState(false);
 
@@ -90,7 +92,7 @@ function NavBar() {
                 </div>
             </div> 
             <div className= " flex text-[8px] text-white w-14 h-4 rounded-l-full rounded-r-full border border-white bg-transparent items-center justify-center font-semibold">
-                <div className= "h-2 w-2 bg-white rounded-full"></div>
+                <motion.div animate={{ opacity: [0, 1, 0] }} transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", ease: "linear" }} className= "h-2 w-2 bg-white rounded-full"></motion.div>
                 <div className="ml-1 flex flex-row text-nowrap text-[10px]"> ON AIR </div>
             </div>
 
